@@ -7,7 +7,7 @@ const userSchema = new Schema(
     username: {
       type: String,
       required: true,
-      unique,
+
       lowerCase: true,
       trim: true,
       index: true,
@@ -15,7 +15,7 @@ const userSchema = new Schema(
     email: {
       type: String,
       required: true,
-      unique,
+      unique: true,
       lowerCase: true,
       trim: true,
     },
@@ -23,6 +23,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
       trim: true,
+      unique: true,
       lowerCase: true,
     },
     avatar: {
