@@ -11,9 +11,8 @@ app.use(
   })
 );
 
-//Max 16kb json data recive korbo
+
 app.use(express.json({ limit: "16kb" }));
-//URL theke data neyar jonno
 app.use(
   express.urlencoded({
     extended: true,
