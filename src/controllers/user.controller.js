@@ -133,7 +133,6 @@ const loginUser = asyncHandler(async (req, res) => {
     );
 });
 
-//Remove access token and cookie
 const logoutUser = asyncHandler(async (req, res) => {
   await User.findByIdAndUpdate(
     req.user._id,
