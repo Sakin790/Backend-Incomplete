@@ -5,6 +5,7 @@ dotenv.config({
   path: "./env",
 });
 
+//Db connection code 
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 9090, () => {
